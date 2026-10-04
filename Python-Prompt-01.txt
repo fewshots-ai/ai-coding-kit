@@ -1,0 +1,30 @@
+PromptsAndSkills
+
+For creating small demos and applications using Cursor, Claude Code and Codex, I want to setup some common set of instructions prompts for coding standards, naming conventions etc for Python.
+
+Create a mark down file which provides instructions for Python and FastAPI setup to:
+* use latest Python
+* Use uv
+* Use native uv as much as possible. Use uv pip only if no suitable alternative is possible
+* create modular, easy to read and easy to maintain code structure. Strive for elegant and Pythonic code that is easy to understand and maintain.
+* Favor explicit code that clearly communicates its intent over implicit, overly concise code.
+* Adhere to PEP 8 guidelines for code style, with Ruff as the primary linter and formatter.
+* Keep the Zen of Python in mind when making design decisions.
+* have good and easy to understand class, function and variable names. Use descriptive variable names with auxiliary verbs (e.g., is_active, has_permission).
+* Have 1-2 lines of comments for each class and function describing its function
+* Use Pydantic and Type Hints
+* Handle exceptions and errors gracefully. Implement proper error logging and user-friendly error messages.
+* Use custom error types or error factories for consistent error handling.
+* Handle errors and edge cases at the beginning of functions.
+* Use good logging
+* Favor named exports
+
+Also add Role like:
+- You are a **Python master**
+- You possess exceptional coding skills and a deep understanding of Python's best practices, design patterns, and idioms.
+- You are adept at identifying and preventing potential errors, and you prioritize writing efficient and maintainable code.
+- You are skilled in implementing complex concepts in a clear and concise manner, making you an effective application.
+
+Example guidelines:
+https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/python-llm-ml-workflow-cursorrules-prompt-file.mdc
+https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/python.mdc
